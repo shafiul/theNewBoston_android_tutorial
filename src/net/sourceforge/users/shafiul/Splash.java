@@ -25,7 +25,7 @@ public class Splash extends Activity {
 				}catch(InterruptedException e){
 					e.printStackTrace();
 				}finally{
-					Intent openStartingPoint = new Intent("net.sourceforge.users.shafiul.STARTPOINT");
+					Intent openStartingPoint = new Intent("net.sourceforge.users.shafiul.MENU");
 					startActivity(openStartingPoint);
 				}
 			}
