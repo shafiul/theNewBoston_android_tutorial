@@ -27,6 +27,7 @@
 	
 		<ToggleButton
 		    android:id="@+id/tbPassword"
+		    android:checked="true"
 		    android:layout_weight="80"
 		    android:layout_width="fill_parent"
 		    android:paddingBottom="10dp"
