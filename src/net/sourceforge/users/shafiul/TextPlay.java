@@ -33,6 +33,22 @@ public class TextPlay extends Activity {
 				}
 			}
 		});
+		
+		
+		chkCmd.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View v) {
+				String check = input.getText().toString();
+				if(check.contentEquals("left")){
+					
+				}else if(check.contentEquals("center")){
+					
+				}else if(check.contentEquals("right")){
+					
+				}
+				
+			}
+		});
 	}
 
 	
