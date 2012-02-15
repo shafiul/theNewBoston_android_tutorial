@@ -1,10 +1,12 @@
 Hi all,
 
-I'm  just learning android from the awesome tutorials made by Travis (available for FREE at ) and decided to code them in hand. Just pushing them to this repo if anyone needs them.
+I'm  just learning android from the awesome tutorials made by Travis (available for FREE at http://thenewboston.org/list.php?cat=6) and decided to code them in hand. Just pushing them to this repo if anyone needs them.
 
-One interesting point, I'll make a commit after every tutorial! So you can browse the snapsot of each tutorial by selecting previous commits! Cool, huh? (The initial commit begins with tutorial#10, though)
+One interesting point, I'll make a commit after every tutorial! So you can browse the snapsot of each tutorial by selecting a download from https://github.com/shafiul/theNewBoston_android_tutorial/tags
 
-So if you know how to browse through different commits of a git repository (they are basically nothing, consider them as many diffferent versions) you can get codes of literally all tutorials. The commit message will help you.
+Cool, huh? (The initial commit begins with Tutorial 10, though).
+
+You can also browse-through the codes of different tutorials online.
 
 Regards,
 Shafiul

@@ -26,24 +26,24 @@ public class startPoint extends Activity {
         setContentView(R.layout.main);
         
         // Custom
-        this.counter = 0;
-        this.add = (Button) this.findViewById(R.id.bAdd);
-        this.sub = (Button) this.findViewById(R.id.bSub);
-        this.display = (TextView) this.findViewById(R.id.tvDisplay);
+        counter = 0;
+        add = (Button) findViewById(R.id.bAdd);
+        sub = (Button) findViewById(R.id.bSub);
+        display = (TextView) findViewById(R.id.tvDisplay);
         
-        this.add.setOnClickListener(new View.OnClickListener() {
+        add.setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
 				counter++;
-				updateDisplay();
+				display.setText("Your total is: " + counter);
 			}
 		});
         
-        this.sub.setOnClickListener(new View.OnClickListener() {
+        sub.setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
 				counter--;
-				updateDisplay();
+				display.setText("Your total is: " + counter);
 			}
 		});
         
