@@ -1,6 +1,7 @@
 package net.sourceforge.users.shafiul;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 public class Splash extends Activity {
@@ -13,11 +14,12 @@ public class Splash extends Activity {
 		Thread timer = new Thread(){
 			public void run(){
 				try{
-					// do nothing
+					sleep(5000);
 				}catch(InterruptedException e){
-					
+					e.printStackTrace();
 				}finally{
-					
+					Intent openStartingPoint = new Intent("net.sourceforge.users.shafiul.STARTPOINT");
+					startActivity(openStartingPoint);
 				}
 			}
 		};
