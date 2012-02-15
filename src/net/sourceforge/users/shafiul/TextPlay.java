@@ -1,5 +1,7 @@
 package net.sourceforge.users.shafiul;
 
+import java.util.Random;
+
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -56,6 +58,10 @@ public class TextPlay extends Activity {
 					display.setTextColor(Color.BLUE);
 					
 				}else if(check.contains("WTF")){
+					Random crazy = new Random();
+					display.setText("WTF!!!");
+					display.setTextSize(crazy.nextInt(72));
+					display.setTextColor(Color.rgb(crazy.nextInt(255), crazy.nextInt(255), crazy.nextInt(255)));
 					
 				}else{
 					display.setText("invalid");
