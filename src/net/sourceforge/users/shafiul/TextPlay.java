@@ -2,6 +2,7 @@ package net.sourceforge.users.shafiul;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,16 +20,16 @@ public class TextPlay extends Activity {
 		
 		Button chkCmd = (Button) findViewById(R.id.bResults);
 		final ToggleButton passTog = (ToggleButton) findViewById(R.id.tbPassword);
-		EditText input = (EditText) findViewById(R.id.etCommands);
+		final EditText input = (EditText) findViewById(R.id.etCommands);
 		TextView display = (TextView) findViewById(R.id.tvResults);
 		
 		passTog.setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
 				if(passTog.isChecked()){
-					
+					input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
 				}else{
-					
+					input.setInputType(InputType.TYPE_CLASS_TEXT);
 				}
 			}
 		});
