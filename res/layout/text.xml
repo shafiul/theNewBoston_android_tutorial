@@ -11,11 +11,28 @@
 	    android:password="true"
 	     />
 
-	<Button
-	    android:id="@+id/bResults"
-	    android:layout_width="fill_parent"
-	    android:layout_height="wrap_content"
-	    android:text="Button" />
+	<LinearLayout 
+	    android:orientation="horizontal" android:weightSum="100"
+	    android:layout_height="wrap_content" android:layout_width="fill_parent"
+	    >
+	
+		<Button
+		    android:id="@+id/bResults"
+		    android:layout_weight="20"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Button" 
+		    />
+	
+		<ToggleButton
+		    android:id="@+id/toggleButton1"
+		    android:layout_weight="80"
+		    android:layout_width="fill_parent"
+		    
+		    android:layout_height="wrap_content"
+		    android:text="ToggleButton" 
+		    />
+	</LinearLayout>
 
 	<TextView
 	    android:id="@+id/tvResults"
