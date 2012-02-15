@@ -10,6 +10,19 @@ public class Splash extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.splash);
+		Thread timer = new Thread(){
+			public void run(){
+				try{
+					// do nothing
+				}catch(InterruptedException e){
+					
+				}finally{
+					
+				}
+			}
+		};
+		
+		timer.start();
 	}
 	
 }
