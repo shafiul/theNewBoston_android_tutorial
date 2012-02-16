@@ -47,6 +47,11 @@
             android:label="@string/app_name" >
         </activity>
         
+        <activity
+            android:name=".Camera"
+            android:label="@string/app_name" >
+        </activity>
+        
         
     </application>
 

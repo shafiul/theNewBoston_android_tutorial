@@ -2,6 +2,7 @@ package net.sourceforge.users.shafiul;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,12 +17,14 @@ public class Camera extends Activity implements View.OnClickListener{
 	
 	Intent i;
 	final static int cameraData = 0;
+	Bitmap bmp;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		// custom
+		setContentView(R.layout.photo);
 		initialize();
 	}
 
@@ -44,6 +47,18 @@ public class Camera extends Activity implements View.OnClickListener{
 			break;
 		case R.id.bSetWall:
 			break;
+		}
+	}
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		// TODO Auto-generated method stub
+		super.onActivityResult(requestCode, resultCode, data);
+		// custom
+		if(resultCode == RESULT_OK){
+			Bundle extras = data.getExtras();
+			bmp = (Bitmap) extras.get("data");
+			iv.setImageBitmap(bmp);
 		}
 	}
 	
