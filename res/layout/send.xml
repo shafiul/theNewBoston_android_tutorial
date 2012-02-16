@@ -3,6 +3,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Travis is..." />
+
+    <RadioGroup
+        android:id="@+id/rgAnswers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rCrazy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crazy" />
+
+        <RadioButton
+            android:id="@+id/rSexy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cool" />
+
+        <RadioButton
+            android:id="@+id/rBoth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Both" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tvText" />
 
 </LinearLayout>

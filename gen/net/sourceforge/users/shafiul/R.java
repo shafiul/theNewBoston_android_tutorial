@@ -17,14 +17,14 @@ public final class R {
     public static final class id {
         public static final int analogClock1=0x7f060007;
         public static final int bAdd=0x7f06000d;
-        public static final int bResults=0x7f060013;
+        public static final int bResults=0x7f060019;
         public static final int bSA=0x7f060009;
         public static final int bSAFR=0x7f06000a;
         public static final int bSentEmail=0x7f060006;
         public static final int bSetWall=0x7f060011;
         public static final int bSub=0x7f06000e;
         public static final int etAction=0x7f060004;
-        public static final int etCommands=0x7f060012;
+        public static final int etCommands=0x7f060018;
         public static final int etEmails=0x7f060000;
         public static final int etIntro=0x7f060001;
         public static final int etName=0x7f060002;
@@ -33,10 +33,16 @@ public final class R {
         public static final int etThings=0x7f060003;
         public static final int ibTakePic=0x7f060010;
         public static final int ivReturnedPic=0x7f06000f;
-        public static final int tbPassword=0x7f060014;
+        public static final int rBoth=0x7f060016;
+        public static final int rCrazy=0x7f060014;
+        public static final int rSexy=0x7f060015;
+        public static final int rgAnswers=0x7f060013;
+        public static final int tbPassword=0x7f06001a;
+        public static final int textView2=0x7f060017;
         public static final int tvDisplay=0x7f06000c;
         public static final int tvGot=0x7f06000b;
-        public static final int tvResults=0x7f060015;
+        public static final int tvQuestion=0x7f060012;
+        public static final int tvResults=0x7f06001b;
     }
     public static final class layout {
         public static final int email=0x7f030000;
