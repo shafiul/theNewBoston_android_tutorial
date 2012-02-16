@@ -50,7 +50,9 @@
         
         <activity
             android:name=".Camera"
-            android:label="@string/app_name" >
+            android:label="Camera application" 
+            android:screenOrientation="portrait"
+            >
         </activity>
         
         
