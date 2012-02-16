@@ -34,10 +34,16 @@
             android:text="Both" />
     </RadioGroup>
 
-    <TextView
-        android:id="@+id/textView2"
+    <Button
+        android:id="@+id/bReturn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="tvText" />
+        android:text="Return" />
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
 
 </LinearLayout>
