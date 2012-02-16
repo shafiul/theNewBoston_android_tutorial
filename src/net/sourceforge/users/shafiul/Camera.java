@@ -1,5 +1,7 @@
 package net.sourceforge.users.shafiul;
 
+import java.io.IOException;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -46,6 +48,12 @@ public class Camera extends Activity implements View.OnClickListener{
 			
 			break;
 		case R.id.bSetWall:
+			try {
+				getApplicationContext().setWallpaper(bmp);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			break;
 		}
 	}
