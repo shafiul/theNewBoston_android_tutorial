@@ -14,6 +14,7 @@ public class OpenedClass extends Activity implements OnClickListener, OnCheckedC
 	TextView question, test;
 	Button returnData;
 	RadioGroup selectionList;
+	String gotBread;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,9 @@ public class OpenedClass extends Activity implements OnClickListener, OnCheckedC
 		// custom
 		setContentView(R.layout.send);
 		initialize();
+		Bundle gotBasket = getIntent().getExtras();
+		gotBread = gotBasket.getString("key");
+		question.setText(gotBread);
 	}
 
 	private void initialize() {
@@ -30,6 +34,7 @@ public class OpenedClass extends Activity implements OnClickListener, OnCheckedC
 		test = (TextView) findViewById(R.id.tvText);
 		returnData = (Button) findViewById(R.id.bReturn);
 		returnData.setOnClickListener(this);
+		selectionList = (RadioGroup) findViewById(R.id.rgAnswers);
 		selectionList.setOnCheckedChangeListener(this);
 	}
 
