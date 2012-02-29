@@ -55,4 +55,15 @@ public class Data extends Activity implements OnClickListener{
 		
 	}
 
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		// TODO Auto-generated method stub
+		super.onActivityResult(requestCode, resultCode, data);
+		if(resultCode == RESULT_OK){
+			Bundle basket = data.getExtras();
+			String s = basket.getString("answer");
+			gotAnswer.setText(s);
+		}
+	}
+
 }

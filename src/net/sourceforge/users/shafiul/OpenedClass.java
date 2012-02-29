@@ -24,9 +24,9 @@ public class OpenedClass extends Activity implements OnClickListener, OnCheckedC
 		// custom
 		setContentView(R.layout.send);
 		initialize();
-		Bundle gotBasket = getIntent().getExtras();
-		gotBread = gotBasket.getString("key");
-		question.setText(gotBread);
+//		Bundle gotBasket = getIntent().getExtras();
+//		gotBread = gotBasket.getString("key");
+//		question.setText(gotBread);
 	}
 
 	private void initialize() {
@@ -41,7 +41,12 @@ public class OpenedClass extends Activity implements OnClickListener, OnCheckedC
 
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
-		
+		Intent person = new Intent();
+		Bundle backpack = new Bundle();
+		backpack.putString("answer", setData);
+		person.putExtras(backpack);
+		setResult(RESULT_OK, person);
+		finish();
 	}
 
 	public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -59,10 +64,5 @@ public class OpenedClass extends Activity implements OnClickListener, OnCheckedC
 		test.setText(setData);
 	}
 
-	@Override
-	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		// TODO Auto-generated method stub
-		super.onActivityResult(requestCode, resultCode, data);
-	}
 
 }
