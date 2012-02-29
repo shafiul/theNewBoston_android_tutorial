@@ -1,6 +1,7 @@
 package net.sourceforge.users.shafiul;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -14,7 +15,7 @@ public class OpenedClass extends Activity implements OnClickListener, OnCheckedC
 	TextView question, test;
 	Button returnData;
 	RadioGroup selectionList;
-	String gotBread;
+	String gotBread, setData;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -46,13 +47,22 @@ public class OpenedClass extends Activity implements OnClickListener, OnCheckedC
 	public void onCheckedChanged(RadioGroup group, int checkedId) {
 		switch(checkedId){
 		case R.id.rCrazy:
+			setData = "Probably Right";
 			break;
 		case R.id.rSexy:
+			setData = "Absolutely Right";
 			break;
 		case R.id.rBoth:
+			setData = "Spot on!";
 			break;
 		}
-		
+		test.setText(setData);
+	}
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		// TODO Auto-generated method stub
+		super.onActivityResult(requestCode, resultCode, data);
 	}
 
 }

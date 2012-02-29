@@ -48,6 +48,8 @@ public class Data extends Activity implements OnClickListener{
 			break;
 			
 		case R.id.bSAFR:
+			Intent i = new Intent(Data.this, OpenedClass.class);
+			startActivityForResult(i, 0);
 			break;
 		}
 		
