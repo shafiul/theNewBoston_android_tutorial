@@ -8,6 +8,10 @@
 package net.sourceforge.users.shafiul;
 
 public final class R {
+    public static final class array {
+        public static final int lValues=0x7f060001;
+        public static final int list=0x7f060000;
+    }
     public static final class attr {
     }
     public static final class drawable {
@@ -15,37 +19,38 @@ public final class R {
         public static final int splash_background=0x7f020001;
     }
     public static final class id {
-        public static final int aboutus=0x7f07001d;
-        public static final int analogClock1=0x7f070007;
-        public static final int bAdd=0x7f07000d;
-        public static final int bResults=0x7f07001a;
-        public static final int bReturn=0x7f070017;
-        public static final int bSA=0x7f070009;
-        public static final int bSAFR=0x7f07000a;
-        public static final int bSentEmail=0x7f070006;
-        public static final int bSetWall=0x7f070011;
-        public static final int bSub=0x7f07000e;
-        public static final int etAction=0x7f070004;
-        public static final int etCommands=0x7f070019;
-        public static final int etEmails=0x7f070000;
-        public static final int etIntro=0x7f070001;
-        public static final int etName=0x7f070002;
-        public static final int etOutro=0x7f070005;
-        public static final int etSend=0x7f070008;
-        public static final int etThings=0x7f070003;
-        public static final int ibTakePic=0x7f070010;
-        public static final int ivReturnedPic=0x7f07000f;
-        public static final int preferences=0x7f07001e;
-        public static final int rBoth=0x7f070016;
-        public static final int rCrazy=0x7f070014;
-        public static final int rSexy=0x7f070015;
-        public static final int rgAnswers=0x7f070013;
-        public static final int tbPassword=0x7f07001b;
-        public static final int tvDisplay=0x7f07000c;
-        public static final int tvGot=0x7f07000b;
-        public static final int tvQuestion=0x7f070012;
-        public static final int tvResults=0x7f07001c;
-        public static final int tvText=0x7f070018;
+        public static final int aboutus=0x7f09001d;
+        public static final int analogClock1=0x7f090007;
+        public static final int bAdd=0x7f09000d;
+        public static final int bResults=0x7f09001a;
+        public static final int bReturn=0x7f090017;
+        public static final int bSA=0x7f090009;
+        public static final int bSAFR=0x7f09000a;
+        public static final int bSentEmail=0x7f090006;
+        public static final int bSetWall=0x7f090011;
+        public static final int bSub=0x7f09000e;
+        public static final int etAction=0x7f090004;
+        public static final int etCommands=0x7f090019;
+        public static final int etEmails=0x7f090000;
+        public static final int etIntro=0x7f090001;
+        public static final int etName=0x7f090002;
+        public static final int etOutro=0x7f090005;
+        public static final int etSend=0x7f090008;
+        public static final int etThings=0x7f090003;
+        public static final int exit=0x7f09001f;
+        public static final int ibTakePic=0x7f090010;
+        public static final int ivReturnedPic=0x7f09000f;
+        public static final int preferences=0x7f09001e;
+        public static final int rBoth=0x7f090016;
+        public static final int rCrazy=0x7f090014;
+        public static final int rSexy=0x7f090015;
+        public static final int rgAnswers=0x7f090013;
+        public static final int tbPassword=0x7f09001b;
+        public static final int tvDisplay=0x7f09000c;
+        public static final int tvGot=0x7f09000b;
+        public static final int tvQuestion=0x7f090012;
+        public static final int tvResults=0x7f09001c;
+        public static final int tvText=0x7f090018;
     }
     public static final class layout {
         public static final int about=0x7f030000;
@@ -58,13 +63,16 @@ public final class R {
         public static final int text=0x7f030007;
     }
     public static final class menu {
-        public static final int cool_menu=0x7f060000;
+        public static final int cool_menu=0x7f080000;
     }
     public static final class raw {
-        public static final int splashsound=0x7f040000;
+        public static final int splashsound=0x7f050000;
     }
     public static final class string {
-        public static final int app_name=0x7f050001;
-        public static final int hello=0x7f050000;
+        public static final int app_name=0x7f070001;
+        public static final int hello=0x7f070000;
+    }
+    public static final class xml {
+        public static final int prefs=0x7f040000;
     }
 }

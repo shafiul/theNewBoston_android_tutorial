@@ -57,6 +57,11 @@ public class Menu extends ListActivity {
 				startActivity(i);
 				break;
 			case R.id.preferences:
+				Intent p = new Intent("net.sourceforge.users.shafiul.PREFS");
+				startActivity(p);
+				break;
+			case R.id.exit:
+				finish();
 				break;
 		}
 		return false;
