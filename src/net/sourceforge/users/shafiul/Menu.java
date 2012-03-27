@@ -53,6 +53,8 @@ public class Menu extends ListActivity {
 		// TODO Auto-generated method stub
 		switch(item.getItemId()){
 			case R.id.aboutus:
+				Intent i = new Intent("net.sourceforge.users.shafiul.ABOUT");
+				startActivity(i);
 				break;
 			case R.id.preferences:
 				break;
