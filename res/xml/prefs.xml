@@ -8,8 +8,8 @@
     
     <CheckBoxPreference 
         android:key="checkbox"
-        android:title="CheckBox"
-        android:summary="Check this out"
+        android:title="Music"
+        android:summary="For the splash screen"
         android:defaultValue="true"
         />
     
